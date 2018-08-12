@@ -1,0 +1,21 @@
+{
+  "presets": ["react", ["env", {
+    "modules": false,
+  }]],
+  "plugins": [
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-export-extensions",
+    "styled-components",
+    ["module-resolver", {
+      "root": ["./src"]
+    }],
+    "transform-flow-strip-types"
+  ],
+  "env": {
+    "test": {
+     "presets": ["react", "flow"],
+     "plugins": ["transform-es2015-modules-commonjs"]
+    }
+  }
+}
