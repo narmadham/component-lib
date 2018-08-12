@@ -14,7 +14,7 @@ module.exports = {
   module: {
     rules: [
       {
-        exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
+        exclude: /node_modules\/(?!()\/).*/,
         test: /\.(js|jsx)$/,
         loader: 'babel-loader',
         options: {
